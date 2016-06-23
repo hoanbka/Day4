@@ -16,10 +16,7 @@ public class SymmetricString {
 				break;
 			}
 		}
-		if (check == false) {
-			System.out.println(false);
-		} else
-			System.out.println(true);
+		System.out.println(check);
 
 	}
 

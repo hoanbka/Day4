@@ -2,7 +2,7 @@ package day4;
 
 import java.util.Scanner;
 
-public class TongCacSo {
+public class Sum {
 
 	public static void main(String[] args) {
 		boolean check = true;

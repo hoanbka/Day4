@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class LeapYear {
 
 	public static boolean isLeapYear(int year) {
-		boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
-		if (isLeapYear) {
-			return true;
-		} else
-			return false;
+		return ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
 	}
 
 	public static void main(String[] args) {
@@ -23,10 +19,10 @@ public class LeapYear {
 			String str = input.next();
 			if (str.contains("1")) {
 				check = true;
-			} else
-			{
+			} else {
 				System.out.println("Thanks for using the program haha");
-				check = false;}
+				check = false;
+			}
 		}
 	}
 
