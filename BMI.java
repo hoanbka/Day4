@@ -22,19 +22,20 @@ public class BMI {
 			System.out.println("BMI index of " + name);
 			if (bmi < 18.5) {
 				System.out.println(" Thieu can");
-			} else if ((bmi >= 18.5) && (bmi < 25)) {
+			} else if (bmi < 25) {
 				System.out.println("Ly tuong");
-			} else if ((bmi >= 25) && (bmi <= 30)) {
+			} else if (bmi <= 30) {
 				System.out.println("Thua can");
 			} else
 				System.out.println("Beo phi");
 			System.out.println("Do you want to continue? (1/0)");
-			String str = input.next();
-
-			if (str.contains("1")) {
+			char c = input.next().charAt(0);
+			if (c == '1') {
 				check = true;
-			} else
+			} else {
+				System.out.println("Thanks for using the program haha");
 				check = false;
+			}
 
 		}
 
