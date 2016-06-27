@@ -16,8 +16,9 @@ public class LeapYear {
 			int year = input.nextInt();
 			System.out.println(isLeapYear(year));
 			System.out.println("Do you want to continue : 1/0");
-			String str = input.next();
-			if (str.contains("1")) {
+
+			char c = input.next().charAt(0);
+			if (c == '1') {
 				check = true;
 			} else {
 				System.out.println("Thanks for using the program haha");
